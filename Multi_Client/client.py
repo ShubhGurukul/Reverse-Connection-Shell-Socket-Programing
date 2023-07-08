@@ -8,6 +8,8 @@ port = 9999
 
 s.connect((host, port))
 
+# when connection is live
+
 while True:
     data = s.recv(1024)
     if data[:2].decode("utf-8") == 'cd':
